@@ -15,11 +15,9 @@ Fulfill the below user stories and get all of the tests to pass. Use whichever l
 
 You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!</p>
         <ul>
-            <li>Build a Random Quote Machine</li>
-            <li>Build a Markdown Previewer</li>
-            <li>Build a Drum Machine</li>
-            <li>Build a JavaScript Calculator</li>
-            <li>Build a 25 + 5 Clock</li>
+            <li>User Story #1: I can see an element with id="break-label" that contains a string (e.g. "Break Length").</li>
+            <li>User Story #2: I can see an element with id="session-label" that contains a string (e.g. "Session Length").</li>
+            <li>User Story #3: I can see two clickable elements with corresponding IDs: id="break-decrement" and id="session-decrement".</li>
           </ul>
     </div>
 </body>
