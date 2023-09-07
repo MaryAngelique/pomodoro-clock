@@ -20,6 +20,19 @@ function App() {
     timerRunning: false,
   });
 
+  useEffect(() => {
+    let timerID: number;
+    if (!displayState.timerRunning) return;
+
+    if (displayState.timerRunning) {
+      timerID = window.setInterval(decrementDisplay, 1000);
+    }
+
+    return () => {
+      window.clearInterval(timerID);
+    };
+  }, [displayState.timerRunning]);
+
   const reset = () => {
     setBreakTime(defaultBreakTime);
     setSessionTime(defaultSessionTime);
@@ -37,6 +50,13 @@ function App() {
     setDisplayState((prev) => ({
       ...prev,
       timerRunning: !prev.timerRunning,
+    }));
+  };
+
+  const decrementDisplay = () => {
+    setDisplayState((prev) => ({
+      ...prev,
+      time: prev.time - 1,
     }));
   };
 
