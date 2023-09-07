@@ -9,9 +9,11 @@
 <body>
     <div class="pomodoro">
         <h1>25 + 5 Clock (Pomodoro Clock)</h1>
-        <p>It's time to put your front end development libraries skills to the test. Use Bootstrap, jQuery, Sass, React, and Redux to build 5 projects that will test everything you've learned up to this point.
+         <p>Objective: Build an app that is functionally similar to this: https://25--5-clock.freecodecamp.rocks.
 
-Complete all 5 projects, and you'll earn the Front End Development Libraries certification.</p>
+Fulfill the below user stories and get all of the tests to pass. Use whichever libraries or APIs you need. Give it your own personal style.
+
+You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery to complete this project. You should use a frontend framework (like React for example) because this section is about learning frontend frameworks. Additional technologies not listed above are not recommended and using them is at your own risk. We are looking at supporting other frontend frameworks like Angular and Vue, but they are not currently supported. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!</p>
         <ul>
             <li>Build a Random Quote Machine</li>
             <li>Build a Markdown Previewer</li>
