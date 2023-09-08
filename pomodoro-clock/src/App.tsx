@@ -77,6 +77,16 @@ function App() {
       time: prev.time - 1,
     }));
   };
+  
+  const changeSessionTime = (time: number) => {
+    if (displayState.timerRunning) return;
+    setSessionTime(time);
+    setDisplayState({
+      time: time,
+      timeType: "Session",
+      timerRunning: false,
+    });
+  };
 
   return (
     <div className="clock">
