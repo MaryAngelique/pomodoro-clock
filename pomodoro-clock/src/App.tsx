@@ -77,7 +77,7 @@ function App() {
       time: prev.time - 1,
     }));
   };
-  
+
   const changeSessionTime = (time: number) => {
     if (displayState.timerRunning) return;
     setSessionTime(time);
@@ -90,12 +90,25 @@ function App() {
 
   return (
     <div className="clock">
+      <h1 id="title">Pomodoro Clock</h1>
+      <div className="left">
+          <h3>What is the Pomodoro Technique?</h3>
+          <p> It involves breaking work into focused, 25-minute intervals called "Pomodoros," separated by short 5-minute breaks. After completing four Pomodoros, you take a longer break of around 15-30 minutes. This technique is designed to improve productivity, reduce distractions, and enhance concentration by harnessing the power of focused work sprints.</p>
+          <h3>How it works:</h3>
+          <ol>
+            <li>Choose a Task: Start by selecting a task you want to work on. It can be anything, from studying for an exam to writing a report or working on a creative project.</li>
+            <li>Set a Timer: Set a timer for a specific period, traditionally 25 minutes, which is known as one Pomodoro. During this time, you commit to working on the task without any distractions or interruptions.</li>
+            <li>Work Intensely: Focus on the selected task during the Pomodoro period. Avoid multitasking and stay on track.</li>
+            <li>Take a Short Break: After completing a Pomodoro, take a short break of about 5 minutes. Use this time to relax, stretch, or do something enjoyable. The break is essential for recharging and preventing burnout.</li>
+            <li>Repeat: Repeat steps 1 through 4 for your task.</li>
+          </ol>
+        </div>
       <div className="setters">
         <div className="break">
           <h4 id="break-label">Break Length</h4>
           <TimeSetter
             time={breakTime}
-            setTime={setBreakTime}
+            setTime={changeBreakTime}
             min={min}
             max={max}
             interval={interval}
@@ -106,7 +119,7 @@ function App() {
           <h4 id="session-label">Session Length</h4>
           <TimeSetter
             time={sessionTime}
-            setTime={setSessionTime}
+            setTime={changeSessionTime}
             min={min}
             max={max}
             interval={interval}
