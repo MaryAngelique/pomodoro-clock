@@ -66,6 +66,11 @@ function App() {
     }));
   };
 
+  const changeBreakTime = (time: number) => {
+    if (displayState.timerRunning) return;
+    setBreakTime(time);
+  };
+
   const decrementDisplay = () => {
     setDisplayState((prev) => ({
       ...prev,
