@@ -24,3 +24,11 @@ button {
   color: #fffffe;
   cursor: pointer;
 }
+
+h4 {
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
+  color: #8e8d8a;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
