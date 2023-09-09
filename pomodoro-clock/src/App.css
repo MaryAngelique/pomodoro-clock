@@ -7,3 +7,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.setters {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+}
