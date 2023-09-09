@@ -14,3 +14,13 @@
   width: 100%;
   justify-content: space-around;
 }
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #E98074;
+  color: #fffffe;
+  cursor: pointer;
+}
