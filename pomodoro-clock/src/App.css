@@ -3,8 +3,14 @@
   margin: 50px;
 }
 
-.title {
-
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #left {
@@ -20,6 +26,7 @@
   text-align: center;
   width: 100%;
   justify-content: space-around;
+  font-family: 'Courier Prime', monospace;
 }
 
 button {
@@ -28,7 +35,7 @@ button {
   border: none;
   border-radius: 5px;
   background-color: #E98074;
-  color: #fffffe;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -48,4 +55,5 @@ span {
 .display {
   text-align: center;
   margin-top: 20px;
+  font-family: 'Courier Prime', monospace;
 }
