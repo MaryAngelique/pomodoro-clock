@@ -1,12 +1,13 @@
-.clock {
-  text-align: center;
+.container {
   margin: 50px;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  height: 100vh;
+.title {
+  text-align: center;
+}
+
+.clock {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -14,6 +15,8 @@
 }
 
 #left {
+  max-width: 50%;
+  text-align: start;
   padding: 20px;
   display: inline-block;
   width: 100px;
@@ -23,6 +26,7 @@
 
 .setters {
   display: flex;
+  flex-direction: column;
   text-align: center;
   width: 100%;
   justify-content: space-around;
@@ -31,7 +35,8 @@
 
 button {
   margin: 20px;
-  padding: 10px 20px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   background-color: #E98074;
@@ -43,7 +48,7 @@ h4 {
   font-family: 'Courier Prime', monospace;
   font-weight: 400;
   color: #8e8d8a;
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -53,7 +58,5 @@ span {
 }
 
 .display {
-  text-align: center;
-  margin-top: 20px;
   font-family: 'Courier Prime', monospace;
 }
