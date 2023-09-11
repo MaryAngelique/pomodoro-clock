@@ -90,8 +90,9 @@ function App() {
 
   return (
     <div className="clock">
-      <h1 id="title">Pomodoro Clock</h1>
-      <div className="left">
+      <h1 className="title">Pomodoro Clock</h1>
+      <div className="container">
+        <div className="left">
           <h3>What is the Pomodoro Technique?</h3>
           <p> It involves breaking work into focused, 25-minute intervals called "Pomodoros," separated by short 5-minute breaks. After completing four Pomodoros, you take a longer break of around 15-30 minutes. This technique is designed to improve productivity, reduce distractions, and enhance concentration by harnessing the power of focused work sprints.</p>
           <h3>How it works:</h3>
@@ -134,6 +135,8 @@ function App() {
       />
       <audio id="beep" src={AlarmSound} />
     </div>
+  </div>
+      
   );
 }
 

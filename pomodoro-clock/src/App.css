@@ -1,11 +1,18 @@
 .clock {
-  max-width: 700px;
-  margin: 0 auto;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+
+.title {
+
+}
+
+#left {
+  padding: 20px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  font-family: 'Courier Prime', monospace;
 }
 
 .setters {
